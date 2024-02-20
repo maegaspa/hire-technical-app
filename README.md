@@ -18,7 +18,7 @@ L'application sera disponible à cette url : http://localhost:3000
 
 ## Consigne
 
-1. Vous devrez completez le code afin de le rendre fonctionnel. Le formulaire doit ajouter une entrée dans la liste des pages.
+1. Vous devrez compléter le code afin de le rendre fonctionnel. Le formulaire doit ajouter une entrée dans la liste des pages.
 Aucun contrôle des champs ne vous est demandé. **Attention**, vous devrez utiliser le store afin d'ajouter et de stocker les informations liées à cette liste.
 
 2. Ajoutez un header supplémentaire, il devra être global à toutes les pages. Dans ce header, vous indiquerez dynamiquement le nombre d'entrée présent dans la liste de pages.
