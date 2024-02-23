@@ -9,30 +9,12 @@
 
 <script>
 import Item from '@/components/list/item'
+import { mapState } from 'vuex';
 
 export default {
     components: { Item },
-    data () {
-        return {
-            items: [
-                {
-                    name: "Maliki",
-                    slug: "maliki"
-                },
-                {
-                    name: "Thinkerview",
-                    slug: "thinkerview"
-                },
-                {
-                    name: "Yatuu",
-                    slug: "yatuu"
-                },
-                {
-                    name: "François Theurel",
-                    slug: "francois-theurel"
-                },
-            ]
-        }
+    computed: {
+        ...mapState(['items'])
     }
 }
 </script>

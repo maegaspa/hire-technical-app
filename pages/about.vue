@@ -18,7 +18,8 @@
 <script>
 
 export default {
-    name: 'AboutPage'
+    name: 'AboutPage',
+    layout: 'default'
 }
 </script>
 

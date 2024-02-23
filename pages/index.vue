@@ -16,6 +16,7 @@ import List from '@/components/list/list'
 
 export default {
     name: 'IndexPage',
+    layout: 'default',
     components: { AddItem, List }
 }
 </script>

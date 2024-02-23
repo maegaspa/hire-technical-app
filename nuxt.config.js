@@ -22,6 +22,10 @@ export default {
         ]
     },
 
+    env: {
+        API_URL: 'http://localhost:8000'
+    },
+
     css: [
         '@/assets/main.scss'
     ],

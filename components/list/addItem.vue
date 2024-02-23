@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit.prevent="addItem">
         <h3>Ajouter une page</h3>
         <div>
             <label>Nom :</label>
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
     data () {
         return {
@@ -35,7 +37,21 @@ export default {
             }
         }
     },
-    methods: {}
+    methods: {
+        ...mapActions(['addNewItem']),
+        async addItem() {
+            try {
+                await this.addNewItem({
+                    name: this.fields.name,
+                    slug: this.fields.slug
+                })
+                this.fields.name = null
+                this.fields.slug = null
+            } catch (error) {
+                console.error('Erreur lors de l\'ajout de l\'élément :', error);
+            }
+        }
+    }
 }
 </script>
 
