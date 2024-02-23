@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2 class="pt-24 pb-24 text-center">Test technique Tipeee</h2>
         <div class="layout-maxed">
             <section class="grid sm:grid-cols-2 gap-16">
                 <AddItem />
