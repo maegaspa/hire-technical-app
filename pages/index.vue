@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="layout-maxed">
-            <section class="grid sm:grid-cols-2 gap-16">
+            <section class="grid sm:grid-cols-2 gap-16 mx-20">
                 <AddItem />
                 <List />
             </section>
@@ -19,10 +19,3 @@ export default {
     components: { AddItem, List }
 }
 </script>
-
-<style scoped>
-h2 {
-    background-image: linear-gradient(90deg,#86b3e4,#6f8fe7);
-    color: white;
-}
-</style>

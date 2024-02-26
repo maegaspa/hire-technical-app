@@ -1,4 +1,5 @@
 import axios from 'axios';
+import createPersistedState from 'vuex-persistedstate';
 
 export const state = () => ({
 	items: []
@@ -7,7 +8,6 @@ export const state = () => ({
 export const mutations = {
 	addItem(state, item) {
 		state.items.push(item)
-		console.log(item);
 	}
 }
 
@@ -19,6 +19,7 @@ export const actions = {
 			const newItem = response.data;
 
 			commit('addItem', newItem);
+
 			return newItem;
 		} catch (error) {
 			console.error('Erreur lors de la requête à l\'API :', error);
@@ -26,3 +27,5 @@ export const actions = {
 		}
 	}
 }
+
+export const plugins = [createPersistedState()];
